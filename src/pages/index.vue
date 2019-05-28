@@ -1,11 +1,14 @@
 <template>
   <div class="index">
-    <h1>现在是北京时间</h1>
+    <van-button type="primary">现在是北京时间</van-button>
     <h2>{{time}}</h2>
   </div>
 </template>
 
 <script>
+import Vue from 'vue';
+import { Button } from 'vant';
+Vue.use(Button);
 export default {
     data() {
         return {

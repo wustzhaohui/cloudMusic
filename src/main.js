@@ -4,6 +4,8 @@ import App from './App.vue';
 import router from '@/router';
 // 过滤器
 import '@/filter';
+// 样式
+import '@/styles/_base.less';
 
 Vue.config.productionTip = false;
 

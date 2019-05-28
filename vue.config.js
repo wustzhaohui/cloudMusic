@@ -9,5 +9,12 @@ module.exports = {
                 changeOrigin: true
             }
         }
+    },
+    css: {
+        loaderOptions: {
+            less: {
+                javascriptEnabled: true
+            }
+        }
     }
 };
