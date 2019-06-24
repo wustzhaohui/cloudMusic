@@ -6,7 +6,17 @@
 
 <script>
 export default {
-    name: 'app'
+    name: 'app',
+    mounted() {
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    },
+    methods: {
+        handleResize() {
+            var w = document.documentElement.clientWidth;
+            document.getElementsByTagName('html')[0].style['font-size'] = Math.min((w / 10).toFixed(1), 540 / 10) + 'px';
+        }
+    }
 };
 </script>
 
@@ -17,6 +27,6 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 </style>
