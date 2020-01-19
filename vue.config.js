@@ -1,11 +1,19 @@
+/*
+ * @Author: zhaohui
+ * @Date: 2019-10-28 11:46:29
+ * @LastEditTime : 2020-01-19 15:07:04
+ * @LastEditors  : zhaohui
+ * @Description: 
+ * @FilePath: /cloudMusic/vue.config.js
+ */
 module.exports = {
     outputDir: 'dist',
     devServer: {
         host: '0.0.0.0',
         port: 8088,
         proxy: {
-            '/api': {
-                target: 'http://saas.test.mei1.info',
+            '/': {
+                target: 'https://musicserver.fullmastach.club/',
                 changeOrigin: true
             }
         }
